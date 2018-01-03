@@ -1,0 +1,12 @@
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Release\ConsoleApplication1.exe.config
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Release\ConsoleApplication1.exe
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Release\ConsoleApplication1.pdb
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\obj\Release\SudokuSolver.csprojResolveAssemblyReference.cache
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\obj\Release\ConsoleApplication1.exe
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\obj\Release\ConsoleApplication1.pdb
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Release\SudokuSolver.exe.config
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Release\SudokuSolver.exe
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Release\SudokuSolver.pdb
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\obj\Release\SudokuSolver.csprojResolveAssemblyReference.cache
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\obj\Release\SudokuSolver.exe
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\obj\Release\SudokuSolver.pdb

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Sudoku.Board">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAACAAECAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Board.cs</FileName>
+      <NewMemberFileName>Sudoku.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Sudoku.Cell">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="col1" Hidden="true" />
+      <Field Name="col2" Hidden="true" />
+      <Field Name="modCol" Hidden="true" />
+      <Field Name="modRow" Hidden="true" />
+      <Field Name="row1" Hidden="true" />
+      <Field Name="row2" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAgAEAAACAQAIAAAAyQBAAACIAAAgAAQAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+      <NewMemberFileName>Sudoku.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Program">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAABAAAAAAAAAAAACAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

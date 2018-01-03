@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SudokuSolver</name>
+    </assembly>
+    <members>
+        <member name="T:Sudoku.Cell">
+            <summary>
+            The <c>Cell</c> class is responsible for defining each of the the 81 square/cell instances.
+            Contains two methods. One for initialization, one for validation of the sudoku rules.
+            <list type="bullet">
+            <item>
+            <term>Cell</term>
+            <description>the default constructor</description>
+            </item>
+            <item>
+            <term>init</term>
+            <description>Mainly used to set additional properties of A cell after creation, such as its neighbouring cells</description>
+            </item>
+            <item>
+            <term>validate</term>
+            <description>validates the number placed in this cell according to sudoku rules</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="F:Sudoku.Cell.value">
+            <summary>
+             The value or number of this <c>Cell</c>. Changes throughout the sudoku game and accessed by <see cref="T:Sudoku.Board"/>class.
+             </summary>
+        </member>
+        <member name="F:Sudoku.Cell.row">
+            <summary>
+             The row number this <c>Cell</c> lies in.
+             </summary>
+        </member>
+        <member name="F:Sudoku.Cell.column">
+            <summary>
+             The column number this <c>Cell</c> lies in.
+             </summary>
+        </member>
+        <member name="F:Sudoku.Cell.UpperLeft">
+            <summary>
+             The neigbouring cells. Used as an optimisation.
+             </summary>
+        </member>
+        <member name="F:Sudoku.Cell.UpperRight">
+            <summary>
+             The neigbouring cells. Used as an optimisation.
+             </summary>
+        </member>
+        <member name="F:Sudoku.Cell.LowerLeft">
+            <summary>
+             The neigbouring cells. Used as an optimisation.
+             </summary>
+        </member>
+        <member name="F:Sudoku.Cell.LowerRight">
+            <summary>
+             The neigbouring cells. Used as an optimisation.
+             </summary>
+        </member>
+        <member name="M:Sudoku.Cell.#ctor(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            The default constructor.
+            </summary>
+            <param name="r">row number of this <c>Cell</c></param>
+            <param name="c">column number of this <c>Cell</c></param>
+            <param name="number">number placed on this <c>Cell</c></param>
+        </member>
+        <member name="M:Sudoku.Cell.init">
+            <summary>
+            Each <c>Cell</c> is initialized and called by <see cref="T:Sudoku.Board"/>.
+            </summary>
+        </member>
+        <member name="M:Sudoku.Cell.validate(System.Int32)">
+            <summary>
+            validate each <c>Cell</c> using sudoku rules, also called via <see cref="T:Sudoku.Board"/>Board. 
+            </summary>
+            <param name="number">number to validate.</param>
+            <returns>
+            true if valid, false if not A valid number.
+            </returns>
+        </member>
+        <member name="T:Sudoku.Board">
+            <summary>
+            The static <c>Board</c> class is mainly responsible for containing and solving for the 81 <c>Cell</c> on A single board.
+            Contains three methods.
+            <list type="bullet">
+            <item>
+            <term>init</term>
+            <description>initiializes sudoku board</description>
+            </item>
+            <item>
+            <term>recurse</term>
+            <description>The backtracking happens on this board</description>
+            </item>
+            <item>
+            <term>display</term>
+            <description>Display the sudoku</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="F:Sudoku.Board.cells">
+            <summary>
+             Contains 9x9 Cells which can be iterated.
+            </summary>
+        </member>
+        <member name="F:Sudoku.Board.clues">
+            <summary>
+             The number of clues this sudoku puzzle contains. set during initialization. 
+            </summary>
+        </member>
+        <member name="M:Sudoku.Board.init(System.String)">
+            <summary>
+             Initialize the sudoku board by parsing the puzzle text file and creating and initializing new instances of <c>Cell</c>. 
+            </summary>
+            <param name="filename">the name of the text file to be read</param>
+        </member>
+        <member name="M:Sudoku.Board.recurse(System.Int32,System.Int32)">
+            <summary>
+            The function used for recursion. This function is mainly adapted from the original source code by Mitchell Johnson, the link is found in <see cref="T:Program"/>. 
+            There are three tests done inside the function, the first test is end of board checking. The second is checking for existing clues/cells. The final step is empty cell validation.
+            </summary>
+            <param name="row">the row number to visit in the current step</param>
+            <param name="column">the column number to visit in the current step</param>
+            <returns>true if this recursion step is succesfull</returns>
+        </member>
+        <member name="M:Sudoku.Board.display">
+            <summary>
+             Display the current sudoku board inside console. Called frequently by <see cref="M:Program.showProgress"/>.  
+            </summary>
+            <returns>The puzzle outputted as A string, similar to input format</returns>
+        </member>
+        <member name="T:Program">
+            <summary>
+            The main <c>Program</c> class.
+            Contains two methods, both executed in main. The algorithm runs on the main thread. A second thread displays the progress asynchronously.
+            <list type="bullet">
+            <item>
+            <term>Main</term>
+            <description>Main entry point for this program.</description>
+            </item>
+            <item>
+            <term>solve</term>
+            <description>The solve function initiates the recursion/backtracking algorithm.</description>
+            </item>
+            <item>
+            <term>showProgress</term>
+            <description>displays the intermediate result of the puzzle.</description>
+            </item>
+            </list>
+            </summary>
+        </member>
+        <member name="F:Program.foundSolution">
+            <summary>
+            A trigger used in both threads. terminates <see cref="M:Program.showProgress"/> when A solution is found.
+            </summary>
+        </member>
+        <member name="M:Program.Main(System.String[])">
+            <summary>
+            Main entry point for this program.
+            </summary>
+        </member>
+        <member name="M:Program.solve">
+            <summary>
+            initiates the algorithm.
+            </summary>
+        </member>
+        <member name="M:Program.showProgress">
+            <summary>
+            displays the intermediate result of the puzzle.
+            </summary>
+        </member>
+    </members>
+</doc>

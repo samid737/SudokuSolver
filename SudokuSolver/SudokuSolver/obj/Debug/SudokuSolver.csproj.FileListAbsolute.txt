@@ -1,0 +1,14 @@
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Debug\ConsoleApplication1.XML
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\obj\Debug\SudokuSolver.csprojResolveAssemblyReference.cache
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Sami\Documents\SudokuSolver\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Debug\SudokuSolver.exe.config
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Debug\SudokuSolver.XML
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Debug\SudokuSolver.exe
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\bin\Debug\SudokuSolver.pdb
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\obj\Debug\SudokuSolver.csprojResolveAssemblyReference.cache
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\obj\Debug\SudokuSolver.exe
+C:\Users\Sami\Documents\SudokuSolver\SudokuSolver\obj\Debug\SudokuSolver.pdb
