@@ -63,8 +63,9 @@ public class Program
         Console.WriteLine(Sudoku.Board.display() + "\n\nSudoku has " + Sudoku.Board.clues + " clues\npress any key to solve puzzle\n");
         Console.ReadKey();
 
-        //show progress via A seperate thread.
+        //show progress via A seperate (background) thread.
         Thread progressIndicator = new Thread(showProgress);
+        progressIndicator.IsBackground = true;
         progressIndicator.Start();
 
         //performance timing
