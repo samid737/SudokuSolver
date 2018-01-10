@@ -34,7 +34,7 @@ using System.Threading;
 /// </list>
 /// </summary>
 
-public class Program
+public static class Program
 {
     ///<summary>
     ///A trigger used in both threads. terminates <see cref="showProgress"/> when A solution is found.
