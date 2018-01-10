@@ -13,7 +13,7 @@ namespace Sudoku
     /// <list type="bullet">
     /// <item>
     /// <term>Cell</term>
-    /// <description>the default constructor</description>
+    /// <description>the constructor</description>
     /// </item>
     /// <item>
     /// <term>init</term>
@@ -77,7 +77,7 @@ namespace Sudoku
         Cell LowerRight;
 
         ///<summary>
-        ///The default constructor.
+        ///The constructor.
         ///</summary>
         ///<param name="r">row number of this <c>Cell</c></param>
         ///<param name="c">column number of this <c>Cell</c></param>
